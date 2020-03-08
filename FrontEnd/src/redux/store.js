@@ -1,7 +1,7 @@
   
 import { createStore, combineReducers, applyMiddleware } from "redux";
-import logger from 'redux-logger';
-import reducer from './reducer'
+import reducers from './reducers'
 
-
-export const store = createStore(reducer,applyMiddleware(logger))
+export const initailizeStore = (state) =>{
+    return createStore(reducers,state)
+}
