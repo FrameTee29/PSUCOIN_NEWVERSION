@@ -1,7 +1,9 @@
 const Index =()=>{
     return(
         <div>
-            Hello wolrd !!
+            hello
+            <input type="text" ></input>
+            <button type='submit' onClick={()=>console.log("Yes")}>Enter</button>
         </div>
     );
 }
